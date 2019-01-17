@@ -11,7 +11,7 @@ class Query(
     }
 
     override fun toString(): String {
-        return filters?.joinToString { " and " } ?: super.toString()
+        return filters?.joinToString(" and ") ?: super.toString()
     }
 
     class Builder {
